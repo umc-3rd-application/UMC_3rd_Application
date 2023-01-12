@@ -45,7 +45,7 @@
         android:text="아이디와 비밀번호를\n입력해주세요."
         android:textColor="#0a0a0a"
         android:textSize="22sp"
-        android:textStyle="normal" />
+        android:textStyle="bold" />
 
     <LinearLayout
 

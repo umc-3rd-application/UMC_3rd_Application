@@ -1,5 +1,6 @@
 package com.example.umc_3rd_application
 
+import android.content.Intent
 import android.graphics.Color
 import android.media.Image
 import androidx.appcompat.app.AppCompatActivity
@@ -11,6 +12,7 @@ import android.util.Log
 import android.widget.Button
 import android.widget.EditText
 import android.widget.ImageButton
+import android.widget.TextView
 import android.widget.Toast
 import androidx.core.os.HandlerCompat.postDelayed
 import androidx.core.widget.addTextChangedListener
@@ -45,10 +47,20 @@ class loginactivity : AppCompatActivity() {
         setContentView(R.layout.activity_loginactivity)
 
 
+        //2.비밀번호 찾기 버튼을 누르면 비밀번호 찾기 화면으로 이동합니다.
+        //EditText를 누르면 이동이 되도록 코드를 작성했습니다.
+        val moveToFindPassword = findViewById<TextView>(R.id.movetoFindPassword)
+
+        moveToFindPassword.setOnClickListener {
+
+            val intent = Intent(this, findPassWordActivity::class.java)
+            startActivity(intent)
+        }
+
 
         //3.아이디와 비밀번호를 입력하지 않았다면 로그인 부분의 색이 회색이고
         //아이디를 입력했다면 로그인 버튼의 색이 바뀝니다.
-        //20230111 21시 11분 현재 이 부분이 잘 안되네요.
+
 
         //객체를 생성합니다.
         val loginBtn =findViewById<Button>(R.id.loginButton)
