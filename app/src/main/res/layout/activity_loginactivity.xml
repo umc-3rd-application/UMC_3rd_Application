@@ -109,7 +109,7 @@
     </LinearLayout>
 
     <androidx.appcompat.widget.AppCompatButton
-        android:id="@+id/btn_next"
+        android:id="@+id/loginButton"
         android:layout_width="328dp"
         android:layout_height="48dp"
         android:layout_alignParentStart="true"
