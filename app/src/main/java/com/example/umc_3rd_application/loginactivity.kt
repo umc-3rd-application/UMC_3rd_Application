@@ -1,7 +1,6 @@
 package com.example.umc_3rd_application
 
 import android.graphics.Color
-import android.graphics.Color.parseColor
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.widget.Button
@@ -50,7 +49,7 @@ class loginactivity : AppCompatActivity() {
         //정보를 입력했다면 로그인 버튼의 색이 바뀝니다.
 
         //20230111 21시 11분 현재 이 부분이 잘 안되네요.
-        var loginBtn =findViewById<Button>(R.id.loginButton)
+        var loginBtn =findViewById<Button>(R.id.btn_next)
         var wirteid =findViewById<EditText>(R.id.writeId)
         var wirtepassword =findViewById<EditText>(R.id.writePassword)
         //만약 아이디와 비밀번호를 다 적었다면
