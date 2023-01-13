@@ -44,6 +44,10 @@ class findPassWordActivity : AppCompatActivity() {
         val writeid =findViewById<EditText>(R.id.findPasswordwriteId)
         val nextbutton = findViewById<Button>(R.id.findPasswordNextButton)
 
+        nextbutton.setOnClickListener {
+            val intent = Intent(this, SendPwActivity::class.java)
+            startActivity(intent)
+        }
         //메시지를 담을 변수를 생성합니다.
         var idMessage : String =""
 

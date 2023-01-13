@@ -11,5 +11,7 @@ class FindPwActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         binding = ActivityFindPwBinding.inflate(layoutInflater)
         setContentView(binding.root)
+
+
     }
 }
