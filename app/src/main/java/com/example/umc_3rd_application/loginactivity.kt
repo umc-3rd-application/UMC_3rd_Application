@@ -31,13 +31,14 @@ class loginactivity : AppCompatActivity() {
         //2.비밀번호 찾기 버튼을 누르면 비밀번호 찾기 화면으로 이동합니다.
         //3.아이디와 비밀번호를 입력하지 않았다면 로그인 부분의 색이 회색이고
         //정보를 입력했다면 로그인 버튼의 색이 바뀝니다.
-        // 4.입력한 정보가 서버가 있다면 로그인을 눌렀을 시 홈 화면으로 이동합니다.
+        // 4.입력한 정보가 서버에 있다면 로그인을 눌렀을 시 홈 화면으로 이동합니다.
         //5.만약 아이디,비밀번호가 틀렸거나, 회원이 아니라면 로그인 오류 페이지를 출력합니다.
         //6.스플래쉬 화면(앱을 구동했을 때 가장 먼저 보이는 화면)이 끝나고 난 뒤 이 페이지를 보여줍니다.
         //7.만약, 한번 로그인을 한 상태이면 스플래쉬 화면 뒤에 바로 홈화면으로 이동합니다.
         //8.'설정'에서 '로그아웃'을 눌렀다면 로그아웃을 하고, 다시 로그인 화면으로 이동합니다.
-        //9.뒤로 가기 버튼을 2번 눌렀을시 앱을 종료합니다.
+        //9.뒤로 가기 버튼을 2번 눌렀을시 앱을 완전히 종료합니다.
         //10.1부터 9까지의 부분들은 관련 기능,페이지가 만들어졌을 때 연동해서 개발하는 것이 좋을 것 같습니다.
+        //11.'회원가입' 버튼을 누르면 회원가입 페이지로 이동합니다.
 
 
         //수정사항(2023-01-11)
@@ -45,6 +46,15 @@ class loginactivity : AppCompatActivity() {
         //2.아이디나 비밀번호가 틀렸을 때 나오는 오류 메시지룰 추가해야 합니다. 이를 곧 추가하겠습니다.
 
         setContentView(R.layout.activity_loginactivity)
+
+
+        //11.'회원가입' 버튼을 누르면 회원가입 페이지로 이동합니다.
+        val movetoSignup = findViewById<TextView>(R.id.moveToSignUpActivity)
+        movetoSignup.setOnClickListener{
+            val intent = Intent(this,signUpActivity::class.java)
+            Toast.makeText(this,"회원가입 페이지로 이동합니다.",Toast.LENGTH_SHORT).show()
+            startActivity(intent)
+        }
 
 
         //2.비밀번호 찾기 버튼을 누르면 비밀번호 찾기 화면으로 이동합니다.
@@ -118,19 +128,21 @@ class loginactivity : AppCompatActivity() {
 
         val loginactivityBackButton = findViewById<ImageButton>(R.id.loginBackButton)
         loginactivityBackButton.setOnClickListener{
-            Toast.makeText(this,"앱을 종료합니다.",Toast.LENGTH_SHORT).show()
             finish()
         }
 
     }
-    //9.뒤로 가기 버튼을 2번 눌렀을시 앱을 종료합니다.
+    //9.뒤로 가기 버튼을 2번 눌렀을시 앱을 완전히 종료합니다.
     override fun onBackPressed() {
 
         if (System.currentTimeMillis() - backPressedTime >= 2000) {
             backPressedTime = System.currentTimeMillis()
-            Toast.makeText(this, "한번 더 누르시면 종료됩니다.", Toast.LENGTH_SHORT).show()
+            Toast.makeText(this, "한번 더 누르시면 앱이 완전히 종료됩니다.", Toast.LENGTH_SHORT).show()
         } else {
-            finish()
+            //앱을 완전히 종료시키는 코드입니다.
+            finishAffinity();
+            System.runFinalization();
+            System.exit(0);
         }
 
     }

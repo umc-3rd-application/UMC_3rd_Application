@@ -129,7 +129,7 @@
     </androidx.appcompat.widget.AppCompatButton>
 
     <TextView
-        android:id="@+id/moveToJoinActivity"
+        android:id="@+id/moveToSignUpActivity"
         android:layout_width="76dp"
         android:layout_height="24dp"
         android:layout_alignParentStart="true"

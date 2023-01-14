@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="760dp"
+    android:background="#ffffff">
+
+    <TextView
+        android:id="@+id/txt_send"
+        android:layout_width="328dp"
+        android:layout_height="58dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="112dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginBottom="590dp"
+        android:fontFamily="sans-serif-medium"
+        android:gravity="center_horizontal"
+        android:letterSpacing="0.02"
+        android:text="회원님의 임시 비밀번호가\n 발송되었습니다."
+        android:textColor="#0a0a0a"
+        android:textSize="20sp"
+        android:textStyle="normal" />
+
+    <ImageView
+        android:id="@+id/icon"
+        android:layout_width="135dp"
+        android:layout_height="135dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="112dp"
+        android:layout_marginTop="194dp"
+        android:layout_marginEnd="113dp"
+        android:layout_marginBottom="431dp"
+        android:src="@drawable/icon_check" />
+
+    <TextView
+        android:layout_width="328dp"
+        android:layout_height="58dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="329dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginBottom="373dp"
+        android:fontFamily="sans-serif-medium"
+        android:gravity="center_horizontal"
+        android:letterSpacing="0.02"
+        android:text="로그인 후, \n반드시 비밀번호를 변경해주세요!"
+        android:textColor="#818181"
+        android:textSize="12sp"
+        android:textStyle="normal" />
+
+    <Button
+        android:id="@+id/btn_shift"
+        android:layout_width="328dp"
+        android:layout_height="48dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="643dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginBottom="69dp"
+        android:background="#8071d9"
+        android:gravity="center_horizontal"
+        android:letterSpacing="0.02"
+        android:text="로그인 화면으로 이동"
+        android:textColor="#ffffff"
+        android:textSize="16sp"
+        android:textStyle="normal" />
+
+</RelativeLayout>

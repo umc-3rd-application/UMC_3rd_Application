@@ -6,10 +6,10 @@ import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.text.Editable
 import android.text.TextWatcher
+import android.util.Log
 import android.widget.Button
 import android.widget.EditText
 import android.widget.ImageButton
-import android.widget.TextView
 import android.widget.Toast
 
 class findPassWordActivity : AppCompatActivity() {
@@ -26,7 +26,7 @@ class findPassWordActivity : AppCompatActivity() {
         //1.로그인 화면의 '비밀번호 찾기'를 누르면 '비밀번호 찾기'로 이동하는 것을 구현합니다.
         //2.이메일을 적어야 '다음'버튼이 활성화되는 것을 구현합니다.
         //3.뒤로가기 아이콘을 2번 누르면 로그인화면으로 이동합니다.
-
+        //4.'다음' 버튼을 누르면 '이메일이 발송되었습니다'라는 화면으로 이동합니다.
 
 
         //1.로그인 화면의 '비밀번호 찾기'를 누르면 '비밀번호 찾기'로 이동하는 것을 구현합니다.(loginactivity에 구현했습니다.)
@@ -45,7 +45,7 @@ class findPassWordActivity : AppCompatActivity() {
         val nextbutton = findViewById<Button>(R.id.findPasswordNextButton)
 
         //메시지를 담을 변수를 생성합니다.
-        var idMessage : String =""
+        var idMessage : String = " "
 
 
         //버튼을 비활성화합니다.
@@ -94,6 +94,26 @@ class findPassWordActivity : AppCompatActivity() {
             val intent = Intent(this, loginactivity::class.java)
             Toast.makeText(this,"로그인 화면으로 이동합니다.",Toast.LENGTH_LONG).show()
             startActivity(intent)
+
+        }
+
+        //4.'다음' 버튼을 누르면 '이메일이 발송되었습니다'라는 화면으로 이동합니다.
+        nextbutton.setOnClickListener{
+            Log.e("aaaa","aaaa")
+            val intent = Intent(this,Login3Activity::class.java)
+            startActivity(intent)
+        }
+    }
+    override fun onBackPressed() {
+
+        if (System.currentTimeMillis() - backPressedTime >= 2000) {
+            backPressedTime = System.currentTimeMillis()
+            Toast.makeText(this, "한번 더 누르시면 앱이 완전히 종료됩니다.", Toast.LENGTH_SHORT).show()
+        } else {
+            //앱을 완전히 종료시키는 코드입니다.
+            finishAffinity();
+            System.runFinalization();
+            System.exit(0);
         }
 
     }
