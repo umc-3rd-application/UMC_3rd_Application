@@ -60,6 +60,7 @@
         android:layout_marginTop="437dp"
         android:layout_marginBottom="246dp"
         android:background="@drawable/rectangle_3"
+        android:inputType="textPassword"
         android:hint="비밀번호를 입력해주세요.(10자이상)" />
 
     <EditText
@@ -74,6 +75,7 @@
         android:layout_marginTop="563dp"
         android:layout_marginBottom="120dp"
         android:background="@drawable/rectangle_3"
+        android:inputType="textPassword"
         android:hint="비밀번호를 한번 더 입력해주세요." />
 
     <EditText
