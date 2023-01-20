@@ -101,10 +101,10 @@ class findPassWordActivity : AppCompatActivity() {
 
         }
 
-        //4.'다음' 버튼을 누르면 '이메일이 발송되었습니다'라는 화면으로 이동합니다.
+        //4.'다음' 버튼을 누르면 '임시 비밀번호를 발급받을 이메일 주소를 입력'하는 화면으로 이동합니다.
         nextbutton.setOnClickListener{
             Log.e("aaaa","aaaa")
-            val intent = Intent(this,Login3Activity::class.java)
+            val intent = Intent(this,SendPwActivity::class.java)
             startActivity(intent)
         }
     }

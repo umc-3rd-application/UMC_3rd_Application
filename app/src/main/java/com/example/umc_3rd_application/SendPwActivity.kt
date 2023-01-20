@@ -6,6 +6,7 @@ import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.text.Editable
 import android.text.TextWatcher
+import android.util.Log
 import android.widget.Toast
 import androidx.core.widget.addTextChangedListener
 import com.example.umc_3rd_application.databinding.ActivitySendPwBinding
@@ -42,6 +43,11 @@ class SendPwActivity : AppCompatActivity() {
         )
         binding.btnBacktomain.setOnClickListener {
             val intent = Intent(this, findPassWordActivity::class.java)
+            startActivity(intent)
+        }
+        binding.btnNext.setOnClickListener{
+            Log.e("aaaa","aaaa")
+            val intent = Intent(this,Login3Activity::class.java)
             startActivity(intent)
         }
     }
