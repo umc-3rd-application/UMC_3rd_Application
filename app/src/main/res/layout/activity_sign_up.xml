@@ -2,20 +2,31 @@
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
-    android:layout_width="match_parent"
-    android:layout_height="match_parent"
+    android:layout_width="wrap_content"
+    android:layout_height="760dp"
     tools:context=".signUpActivity">
+
+    <ImageButton
+        android:id="@+id/signUpBackButton"
+        android:layout_width="10dp"
+        android:layout_height="15dp"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="19dp"
+        android:layout_marginTop="43dp"
+
+        android:background="@android:color/transparent"
+        app:srcCompat="@drawable/ic_baseline_arrow_back_ios_new_24" />
 
 
     <TextView
+        android:layout_width="110dp"
+        android:layout_height="23dp"
+        android:fontFamily="sans-serif"
+        android:textStyle="normal"
+        android:textSize="14sp"
+        android:textColor="#525252"
         android:letterSpacing="0.02"
-        android:fontFamily="@font/regular"
-        android:textStyle="bold"
-        android:textColor="#0a0a0a"
-        android:textSize="22sp"
-        android:id="@+id/textView"
-        android:layout_width="100dp"
-        android:layout_height="wrap_content"
+
         android:layout_alignParentStart="true"
         android:layout_alignParentTop="true"
         android:layout_marginStart="49dp"
@@ -24,113 +35,236 @@
         />
 
     <TextView
-        android:id="@+id/textView2"
+        android:id="@+id/name"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_alignParentStart="true"
         android:layout_alignParentTop="true"
-        android:layout_marginStart="49dp"
+        android:layout_marginStart="24dp"
         android:layout_marginTop="143dp"
-        android:textSize="20dp"
-        android:text="이름 입력" />
+        android:textStyle="normal"
+        android:textSize="14sp"
+        android:textColor="#818181"
+        android:letterSpacing="0.02"
+        android:text="이름*" />
 
-    <EditText
-        android:id="@+id/writeNameView"
+    <LinearLayout
         android:layout_width="328dp"
-        android:layout_height="48dp"
+        android:layout_height="35dp"
         android:layout_alignParentStart="true"
         android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="169dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginBottom="556dp"
+        android:background="@drawable/frame_2"
+        android:orientation="horizontal"
+        android:paddingVertical="5dp"
+        android:paddingLeft="8dp"
+        android:paddingRight="15dp">
 
-        android:layout_centerHorizontal="true"
-        android:layout_marginStart="49dp"
-        android:layout_marginTop="176dp"
-
-        android:background="@drawable/rectangle_3"
-        android:hint="회원님의 이름을 입력해주세요." />
-
-    <EditText
-        android:id="@+id/writeNameView2"
-        android:layout_width="328dp"
-        android:layout_height="48dp"
-        android:layout_alignParentStart="true"
-        android:layout_alignParentTop="true"
-
-        android:layout_centerHorizontal="true"
-        android:layout_marginStart="49dp"
-        android:layout_marginTop="437dp"
-
-        android:background="@drawable/rectangle_3"
-        android:inputType="textPassword"
-        android:hint="비밀번호를 입력해주세요.(10자이상)" />
-
-    <EditText
-        android:id="@+id/writeNameView4"
-        android:layout_width="328dp"
-        android:layout_height="48dp"
-        android:layout_alignParentStart="true"
-        android:layout_alignParentTop="true"
-
-        android:layout_centerHorizontal="true"
-        android:layout_marginStart="49dp"
-        android:layout_marginTop="563dp"
-
-        android:background="@drawable/rectangle_3"
-        android:inputType="textPassword"
-        android:hint="비밀번호를 한번 더 입력해주세요." />
-
-    <EditText
-        android:id="@+id/writeNameView3"
-        android:layout_width="328dp"
-        android:layout_height="48dp"
-        android:layout_alignParentStart="true"
-        android:layout_alignParentTop="true"
-
-        android:layout_centerHorizontal="true"
-        android:layout_marginStart="49dp"
-        android:layout_marginTop="300dp"
-
-        android:background="@drawable/rectangle_3"
-        android:hint="회원님의 이메일(아이디)을 입력해주세요." />
+        <EditText
+            android:fontFamily="sans-serif-medium"
+            android:background="@null"
+            android:id="@+id/writeNameView"
+            android:layout_width="match_parent"
+            android:layout_height="24dp"
+            android:textStyle="normal"
+            android:textSize="16sp"
+            android:textColor="#acacac"
+            android:letterSpacing="0.02"
+            tools:hint="실명을 입력해주세요."
+            />
+    </LinearLayout>
 
     <TextView
-        android:id="@+id/textView4"
+        android:id="@+id/emailSignup"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_alignParentStart="true"
         android:layout_alignParentTop="true"
-        android:layout_marginStart="49dp"
-        android:layout_marginTop="266dp"
-        android:text="이메일(아이디) 입력"
-        android:textSize="20dp" />
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="224dp"
+        android:textStyle="normal"
+        android:textSize="14sp"
+        android:textColor="#818181"
+        android:letterSpacing="0.02"
+        android:text="이메일*" />
 
+    <LinearLayout
+        android:layout_width="328dp"
+        android:layout_height="35dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="242dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginBottom="483dp"
+        android:background="@drawable/frame_3"
+        android:orientation="horizontal"
+        android:paddingVertical="5dp"
+        android:paddingLeft="8dp"
+        android:paddingRight="15dp">
+
+        <EditText
+            android:background="@null"
+            android:id="@+id/writeNameView2"
+            android:layout_width="match_parent"
+            android:layout_height="24dp"
+            android:fontFamily="sans-serif-medium"
+            android:textStyle="normal"
+            android:textSize="16sp"
+            android:textColor="#acacac"
+            android:letterSpacing="0.02"
+            tools:hint="ID@email.com"
+            />
+    </LinearLayout>
     <TextView
-        android:id="@+id/textView5"
+        android:id="@+id/password"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_alignParentStart="true"
         android:layout_alignParentTop="true"
-        android:layout_marginStart="49dp"
-        android:layout_marginTop="400dp"
-        android:text="비밀번호 입력"
-        android:textSize="20dp" />
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="297dp"
+        android:textStyle="normal"
+        android:textSize="14sp"
+        android:textColor="#818181"
+        android:letterSpacing="0.02"
+        android:text="비밀번호*" />
 
+    <LinearLayout
+        android:layout_width="328dp"
+        android:layout_height="35dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="315dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginBottom="410dp"
+        android:background="@drawable/frame_3"
+        android:orientation="horizontal"
+        android:paddingVertical="5dp"
+        android:paddingLeft="8dp"
+        android:paddingRight="15dp">
+
+        <EditText
+            android:inputType="textPassword"
+            android:background="@null"
+            android:id="@+id/writeNameView3"
+            android:layout_width="match_parent"
+            android:layout_height="24dp"
+            android:fontFamily="sans-serif-medium"
+            android:textStyle="normal"
+            android:textSize="16sp"
+            android:textColor="#acacac"
+            android:letterSpacing="0.02"
+            tools:hint="비밀번호를 입력해주세요."
+            />
+    </LinearLayout>
     <TextView
-        android:id="@+id/textView6"
+        android:id="@+id/passwordConfirmSingUp"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_alignParentStart="true"
         android:layout_alignParentTop="true"
-        android:layout_marginStart="49dp"
-        android:layout_marginTop="523dp"
-        android:text="비밀번호 확인"
-        android:textSize="20dp" />
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="370dp"
+        android:textStyle="normal"
+        android:textSize="14sp"
+        android:textColor="#818181"
+        android:letterSpacing="0.02"
+        android:text="비밀번호 확인*" />
+
+    <LinearLayout
+        android:layout_width="328dp"
+        android:layout_height="35dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="388dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginBottom="337dp"
+        android:background="@drawable/frame_3"
+        android:orientation="horizontal"
+        android:paddingVertical="5dp"
+        android:paddingLeft="8dp"
+        android:paddingRight="15dp">
+
+        <EditText
+            android:inputType="textPassword"
+            android:background="@null"
+            android:id="@+id/writeNameView4"
+            android:layout_width="match_parent"
+            android:layout_height="24dp"
+            android:fontFamily="sans-serif-medium"
+            android:textStyle="normal"
+            android:textSize="16sp"
+            android:textColor="#acacac"
+            android:letterSpacing="0.02"
+            tools:hint="비밀번호를 한 번 더 입력해주세요."
+           />
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/passwordSignUp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="297dp"
+        android:textStyle="normal"
+        android:textSize="14sp"
+        android:textColor="#818181"
+        android:letterSpacing="0.02"
+        android:text="비밀번호*" />
+
+    <LinearLayout
+        android:layout_width="328dp"
+        android:layout_height="35dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="315dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginBottom="410dp"
+        android:background="@drawable/frame_3"
+        android:orientation="horizontal"
+        android:paddingVertical="5dp"
+        android:paddingLeft="8dp"
+        android:paddingRight="15dp">
+
+    </LinearLayout>
 
     <Button
+
         android:id="@+id/SingUpGoToTheNextButton"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:layout_width="328dp"
+        android:layout_height="48dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
         android:layout_alignParentBottom="true"
-        android:layout_centerHorizontal="true"
-        android:layout_marginBottom="42dp"
-        android:text="다음으로" />
+        android:layout_marginStart="16dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginBottom="69dp"
+        android:fontFamily="sans-serif-medium"
+        android:gravity="center_horizontal"
+        android:letterSpacing="0.02"
+        android:textColor="#ffffff"
+        android:textSize="16sp"
+        android:textStyle="normal"
+        tools:text="다음으로" />
+
+
 </RelativeLayout>

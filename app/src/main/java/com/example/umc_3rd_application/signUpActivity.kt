@@ -105,6 +105,12 @@ class signUpActivity : AppCompatActivity() {
                 }
             }
         }
+        //뒤로가기 버튼을 눌렀을 때 로그인 activity로 이동합니다.
+        binding.signUpBackButton.setOnClickListener{
+            val intent = Intent(this,loginactivity::class.java)
+            Toast.makeText(this,"로그인 단계로 이동합니다.",Toast.LENGTH_LONG).show()
+            startActivity(intent)
+        }
         setContentView(binding.root)
     }
     //9.뒤로 가기 버튼을 2번 눌렀을시 앱을 완전히 종료합니다.
@@ -119,4 +125,6 @@ class signUpActivity : AppCompatActivity() {
             System.exit(0);
         }
     }
+
+
 }
