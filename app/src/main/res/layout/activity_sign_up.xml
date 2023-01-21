@@ -40,11 +40,11 @@
         android:layout_height="48dp"
         android:layout_alignParentStart="true"
         android:layout_alignParentTop="true"
-        android:layout_alignParentBottom="true"
+
         android:layout_centerHorizontal="true"
         android:layout_marginStart="49dp"
         android:layout_marginTop="176dp"
-        android:layout_marginBottom="507dp"
+
         android:background="@drawable/rectangle_3"
         android:hint="회원님의 이름을 입력해주세요." />
 
@@ -54,11 +54,11 @@
         android:layout_height="48dp"
         android:layout_alignParentStart="true"
         android:layout_alignParentTop="true"
-        android:layout_alignParentBottom="true"
+
         android:layout_centerHorizontal="true"
         android:layout_marginStart="49dp"
         android:layout_marginTop="437dp"
-        android:layout_marginBottom="246dp"
+
         android:background="@drawable/rectangle_3"
         android:inputType="textPassword"
         android:hint="비밀번호를 입력해주세요.(10자이상)" />
@@ -69,11 +69,11 @@
         android:layout_height="48dp"
         android:layout_alignParentStart="true"
         android:layout_alignParentTop="true"
-        android:layout_alignParentBottom="true"
+
         android:layout_centerHorizontal="true"
         android:layout_marginStart="49dp"
         android:layout_marginTop="563dp"
-        android:layout_marginBottom="120dp"
+
         android:background="@drawable/rectangle_3"
         android:inputType="textPassword"
         android:hint="비밀번호를 한번 더 입력해주세요." />
@@ -84,11 +84,11 @@
         android:layout_height="48dp"
         android:layout_alignParentStart="true"
         android:layout_alignParentTop="true"
-        android:layout_alignParentBottom="true"
+
         android:layout_centerHorizontal="true"
         android:layout_marginStart="49dp"
         android:layout_marginTop="300dp"
-        android:layout_marginBottom="383dp"
+
         android:background="@drawable/rectangle_3"
         android:hint="회원님의 이메일(아이디)을 입력해주세요." />
 

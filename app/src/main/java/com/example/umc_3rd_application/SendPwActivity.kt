@@ -46,7 +46,6 @@ class SendPwActivity : AppCompatActivity() {
             startActivity(intent)
         }
         binding.btnNext.setOnClickListener{
-            Log.e("aaaa","aaaa")
             val intent = Intent(this,Login3Activity::class.java)
             startActivity(intent)
         }
