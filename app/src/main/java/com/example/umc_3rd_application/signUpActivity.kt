@@ -25,22 +25,12 @@ class signUpActivity : AppCompatActivity() {
 
         //각 객체를 정의합니다.
         //이 때, binding을 통해 정의를 하면 더 빠르게 정의가 됩니다.
-
-
-
-        
-
-
-
-
-
-
         binding.SingUpGoToTheNextButton.setOnClickListener {
 
-            val email = binding.writeNameView3.text!!.toString()
-            val password = binding.writeNameView2.text!!.toString()
-            val passwordverify = binding.writeNameView4.text!!.toString()
             val name = binding.writeNameView.text!!.toString()
+            val email = binding.writeNameView2.text!!.toString()
+            val password = binding.writeNameView3.text!!.toString()
+            val passwordverify = binding.writeNameView4.text!!.toString()
 
 //조건들을 검사할 수 있는 int var 변수를 하나 만듭니다.
             //원래는 boolean 타입으로 정의를 해서 true/false로 판별을 하려 했으나, 이상하게 오류가 떠서 int로 변경했습니다.

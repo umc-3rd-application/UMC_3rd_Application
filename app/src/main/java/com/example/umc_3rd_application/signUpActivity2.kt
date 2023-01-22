@@ -65,11 +65,6 @@ class signUpActivity2 : AppCompatActivity() {
 
     }
 
-
-
-
-
-
     override fun onBackPressed() {
 
         if (System.currentTimeMillis() - backPressedTime >= 2000) {
