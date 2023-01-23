@@ -8,7 +8,7 @@
 
     <ImageButton
         android:id="@+id/signUpBackButton"
-        android:layout_width="10dp"
+        android:layout_width="11dp"
         android:layout_height="15dp"
         android:layout_alignParentTop="true"
         android:layout_marginStart="19dp"
@@ -54,11 +54,11 @@
         android:layout_alignParentStart="true"
         android:layout_alignParentTop="true"
         android:layout_alignParentEnd="true"
-        android:layout_alignParentBottom="true"
+
         android:layout_marginStart="24dp"
         android:layout_marginTop="169dp"
         android:layout_marginEnd="16dp"
-        android:layout_marginBottom="556dp"
+
         android:background="@drawable/frame_2"
         android:orientation="horizontal"
         android:paddingVertical="5dp"
@@ -99,11 +99,11 @@
         android:layout_alignParentStart="true"
         android:layout_alignParentTop="true"
         android:layout_alignParentEnd="true"
-        android:layout_alignParentBottom="true"
+
         android:layout_marginStart="24dp"
         android:layout_marginTop="242dp"
         android:layout_marginEnd="16dp"
-        android:layout_marginBottom="483dp"
+
         android:background="@drawable/frame_3"
         android:orientation="horizontal"
         android:paddingVertical="5dp"
@@ -143,11 +143,11 @@
         android:layout_alignParentStart="true"
         android:layout_alignParentTop="true"
         android:layout_alignParentEnd="true"
-        android:layout_alignParentBottom="true"
+
         android:layout_marginStart="24dp"
         android:layout_marginTop="315dp"
         android:layout_marginEnd="16dp"
-        android:layout_marginBottom="410dp"
+
         android:background="@drawable/frame_3"
         android:orientation="horizontal"
         android:paddingVertical="5dp"
@@ -188,11 +188,11 @@
         android:layout_alignParentStart="true"
         android:layout_alignParentTop="true"
         android:layout_alignParentEnd="true"
-        android:layout_alignParentBottom="true"
+
         android:layout_marginStart="24dp"
         android:layout_marginTop="388dp"
         android:layout_marginEnd="16dp"
-        android:layout_marginBottom="337dp"
+
         android:background="@drawable/frame_3"
         android:orientation="horizontal"
         android:paddingVertical="5dp"
@@ -234,11 +234,11 @@
         android:layout_alignParentStart="true"
         android:layout_alignParentTop="true"
         android:layout_alignParentEnd="true"
-        android:layout_alignParentBottom="true"
+
         android:layout_marginStart="24dp"
         android:layout_marginTop="315dp"
         android:layout_marginEnd="16dp"
-        android:layout_marginBottom="410dp"
+
         android:background="@drawable/frame_3"
         android:orientation="horizontal"
         android:paddingVertical="5dp"

@@ -14,7 +14,9 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.UMC_3rd_Application"
         tools:targetApi="31">
-
+        <activity
+            android:name=".CreateProfile1"
+            android:exported="false" />
         <activity
             android:name=".signUpActivity2"
             android:exported="false">
