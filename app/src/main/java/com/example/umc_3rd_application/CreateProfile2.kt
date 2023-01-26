@@ -23,5 +23,7 @@ class CreateProfile2Activity:AppCompatActivity() {
         }
         val profile2RVAdapter = Profile2RVAdapter(dataList)
         // 이 다음 뭐써야되냐 .. layoutmanager 호출 해야되는데
+
+
     }
 }

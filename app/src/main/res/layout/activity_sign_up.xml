@@ -50,7 +50,7 @@
 
     <LinearLayout
         android:layout_width="328dp"
-        android:layout_height="35dp"
+        android:layout_height="40dp"
         android:layout_alignParentStart="true"
         android:layout_alignParentTop="true"
         android:layout_alignParentEnd="true"
@@ -66,13 +66,13 @@
         android:paddingRight="15dp">
 
         <EditText
-            android:fontFamily="sans-serif-medium"
+
             android:background="@null"
             android:id="@+id/writeNameView"
             android:layout_width="match_parent"
-            android:layout_height="24dp"
+            android:layout_height="30dp"
             android:textStyle="normal"
-            android:textSize="16sp"
+            android:textSize="15sp"
             android:textColor="#acacac"
             android:letterSpacing="0.02"
             tools:hint="실명을 입력해주세요."
@@ -95,7 +95,7 @@
 
     <LinearLayout
         android:layout_width="328dp"
-        android:layout_height="35dp"
+        android:layout_height="40dp"
         android:layout_alignParentStart="true"
         android:layout_alignParentTop="true"
         android:layout_alignParentEnd="true"
@@ -114,10 +114,9 @@
             android:background="@null"
             android:id="@+id/writeNameView2"
             android:layout_width="match_parent"
-            android:layout_height="24dp"
-            android:fontFamily="sans-serif-medium"
+            android:layout_height="30dp"
             android:textStyle="normal"
-            android:textSize="16sp"
+            android:textSize="15sp"
             android:textColor="#acacac"
             android:letterSpacing="0.02"
             tools:hint="ID@email.com"
@@ -139,7 +138,7 @@
 
     <LinearLayout
         android:layout_width="328dp"
-        android:layout_height="35dp"
+        android:layout_height="40dp"
         android:layout_alignParentStart="true"
         android:layout_alignParentTop="true"
         android:layout_alignParentEnd="true"
@@ -159,10 +158,9 @@
             android:background="@null"
             android:id="@+id/writeNameView3"
             android:layout_width="match_parent"
-            android:layout_height="24dp"
-            android:fontFamily="sans-serif-medium"
+            android:layout_height="30dp"
             android:textStyle="normal"
-            android:textSize="16sp"
+            android:textSize="15sp"
             android:textColor="#acacac"
             android:letterSpacing="0.02"
             tools:hint="비밀번호를 입력해주세요."
@@ -184,7 +182,7 @@
 
     <LinearLayout
         android:layout_width="328dp"
-        android:layout_height="35dp"
+        android:layout_height="40dp"
         android:layout_alignParentStart="true"
         android:layout_alignParentTop="true"
         android:layout_alignParentEnd="true"
@@ -204,10 +202,9 @@
             android:background="@null"
             android:id="@+id/writeNameView4"
             android:layout_width="match_parent"
-            android:layout_height="24dp"
-            android:fontFamily="sans-serif-medium"
+            android:layout_height="30dp"
             android:textStyle="normal"
-            android:textSize="16sp"
+            android:textSize="15sp"
             android:textColor="#acacac"
             android:letterSpacing="0.02"
             tools:hint="비밀번호를 한 번 더 입력해주세요."
@@ -230,7 +227,7 @@
 
     <LinearLayout
         android:layout_width="328dp"
-        android:layout_height="35dp"
+        android:layout_height="40dp"
         android:layout_alignParentStart="true"
         android:layout_alignParentTop="true"
         android:layout_alignParentEnd="true"
@@ -251,20 +248,20 @@
 
         android:id="@+id/SingUpGoToTheNextButton"
         android:layout_width="328dp"
-        android:layout_height="48dp"
+        android:layout_height="60dp"
         android:layout_alignParentStart="true"
         android:layout_alignParentEnd="true"
         android:layout_alignParentBottom="true"
         android:layout_marginStart="16dp"
         android:layout_marginEnd="16dp"
         android:layout_marginBottom="69dp"
-        android:fontFamily="sans-serif-medium"
         android:gravity="center_horizontal"
         android:letterSpacing="0.02"
         android:textColor="#ffffff"
-        android:textSize="16sp"
+        android:textSize="24sp"
         android:textStyle="normal"
-        tools:text="다음으로" />
+        android:text="다음으로"
+        />
 
 
 </RelativeLayout>

@@ -44,15 +44,27 @@ class signUpActivity2 : AppCompatActivity() {
             val intent = Intent(Intent.ACTION_VIEW, Uri.parse("https://www.naver.com"))
             startActivity(intent)
         }
+
+
+
+        //뒤로 가기 버튼을 누르면 이전 페이지로 이동하게 합니다.
+        binding.btnBackSignup2.setOnClickListener{
+            val intent = Intent(this,signUpActivity::class.java)
+            Toast.makeText(this,"이전 페이지로 이동합니다.",Toast.LENGTH_LONG).show()
+            startActivity(intent)
+        }
+
         //2.본인인증
         //우선 전화번호를 입력하고, '인증번호 발송'버튼을 누릅니다.
         //이 때, 전화번호를 입력하지 않으면 '인증번호 발송'버튼은 활성화 되지 않습니다.
+
+
 
         //회원가입 완료에 대한 버튼의 객체를 생성합니다.
         binding.FinishSignUpButton.setOnClickListener{
 
             if(ConfirmButton==1)
-            { val intent = Intent(this,loginactivity::class.java)
+            { val intent = Intent(this,CreateProfile1::class.java)
             Toast.makeText(this,"회원가입이 완료되었습니다.",Toast.LENGTH_LONG).show()
             startActivity(intent)
         }
@@ -62,6 +74,7 @@ class signUpActivity2 : AppCompatActivity() {
 
             }
         }
+
 
     }
 

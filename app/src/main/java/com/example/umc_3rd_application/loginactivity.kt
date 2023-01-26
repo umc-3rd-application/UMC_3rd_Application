@@ -63,7 +63,7 @@ class loginactivity : AppCompatActivity() {
 
         moveToFindPassword.setOnClickListener {
 
-            val intent = Intent(this, findPassWordActivity::class.java)
+            val intent = Intent(this, SendPwActivity::class.java)
             startActivity(intent)
         }
 
