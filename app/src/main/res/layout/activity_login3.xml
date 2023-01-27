@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <RelativeLayout
     xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     android:layout_width="match_parent"
     android:layout_height="760dp"
     android:background="#ffffff">
@@ -58,6 +59,7 @@
         android:textStyle="normal" />
 
     <Button
+        android:background="@drawable/button_id"
         android:id="@+id/btn_shift"
         android:layout_width="328dp"
         android:layout_height="48dp"
@@ -67,14 +69,12 @@
         android:layout_marginStart="16dp"
         android:layout_marginEnd="16dp"
         android:layout_marginBottom="69dp"
-        android:background="#8071d9"
         android:gravity="center"
         android:letterSpacing="0.02"
         android:text="로그인 화면으로 이동"
         android:textColor="#ffffff"
         android:textSize="16sp"
         android:textStyle="normal"
-
         />
 
 </RelativeLayout>

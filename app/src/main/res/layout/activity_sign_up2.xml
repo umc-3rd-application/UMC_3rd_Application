@@ -21,13 +21,13 @@
 
     <TextView
         android:letterSpacing="0.02"
-        android:fontFamily="@font/regular"
+        android:fontFamily="sans-serif"
         android:textStyle="bold"
-        android:textColor="#0a0a0a"
+        android:textColor="#525252"
         android:textSize="22sp"
         android:id="@+id/textView"
         android:layout_width="100dp"
-        android:layout_height="wrap_content"
+        android:layout_height="30dp"
         android:layout_alignParentStart="true"
         android:layout_alignParentTop="true"
         android:layout_marginStart="49dp"
@@ -42,13 +42,13 @@
         android:layout_height="wrap_content"
         android:layout_alignParentStart="true"
         android:layout_alignParentTop="true"
-        android:layout_marginStart="50dp"
+        android:layout_marginStart="44dp"
         android:layout_marginTop="112dp"
-        android:fontFamily="@font/regular"
+        android:fontFamily="sans-serif"
         android:letterSpacing="0.02"
         android:text="개인정보 이용방침"
         android:textColor="#0a0a0a"
-        android:textSize="22sp"
+        android:textSize="25sp"
         android:textStyle="bold" />
 
     <TextView
@@ -57,46 +57,46 @@
         android:layout_height="wrap_content"
         android:layout_alignParentStart="true"
         android:layout_alignParentTop="true"
-        android:layout_marginStart="50dp"
-        android:layout_marginTop="327dp"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_centerInParent="true"
+        android:layout_marginStart="44dp"
+        android:layout_marginTop="387dp"
+        android:layout_marginEnd="167dp"
+        android:layout_marginBottom="309dp"
         android:fontFamily="@font/regular"
         android:letterSpacing="0.02"
-        android:text="본인 인증"
+        android:text="본인인증"
         android:textColor="#0a0a0a"
-        android:textSize="22sp"
+        android:textSize="25sp"
         android:textStyle="bold" />
 
     <Button
+        android:textSize="18sp"
+        android:background="@drawable/button"
         android:id="@+id/FinishSignUpButton"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:layout_width="360dp"
+        android:layout_height="50dp"
         android:layout_alignParentBottom="true"
         android:layout_centerHorizontal="true"
-        android:layout_marginBottom="22dp"
+        android:layout_marginBottom="32dp"
         android:text="회원가입 완료/프로필 작성으로 이동" />
 
     <Button
-        android:id="@+id/confirmSignUpButton"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_alignParentBottom="true"
-        android:layout_centerHorizontal="true"
-        android:layout_marginBottom="88dp"
-        android:text="인증번호 확인" />
-
-    <Button
+        android:background="@drawable/button"
         android:id="@+id/goToTheLinkButton"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_alignParentStart="true"
+        android:layout_width="360dp"
+        android:layout_height="50dp"
         android:layout_alignParentTop="true"
         android:layout_centerHorizontal="true"
-        android:layout_marginStart="97dp"
-        android:layout_marginTop="231dp"
+        android:layout_marginStart="44dp"
+        android:layout_marginTop="200dp"
+        android:gravity="center"
+        android:textSize="18sp"
         android:text="개인정보 이용방침 보러 가기" />
 
     <TextView
-
+        android:textSize="10dp"
         android:id="@+id/textView7"
         android:layout_width="310dp"
         android:layout_height="wrap_content"
@@ -106,55 +106,63 @@
         android:layout_marginStart="44dp"
         android:layout_marginTop="150dp"
         android:layout_marginEnd="5dp"
-        android:text="개인정보 이용방침을 보러가지 않으면,\n회원가입이 완료되지 않아요!" />
-
-    <TextView
-
-        android:id="@+id/textView9"
-        android:layout_width="310dp"
-        android:layout_height="wrap_content"
-        android:layout_alignParentStart="true"
-        android:layout_alignParentTop="true"
-        android:layout_alignParentEnd="true"
-        android:layout_marginStart="44dp"
-        android:layout_marginTop="371dp"
-        android:layout_marginEnd="5dp"
-        android:text="본인 인증을 하지 않으면,\n회원가입이 완료되지 않아요!" />
+        android:text="개인정보 이용방침을 아래 버튼을 눌러 확인해주세요.\n외부 페이지로 이동합니다." />
 
     <EditText
         android:id="@+id/pressEmailAddress"
-        android:layout_width="310dp"
+        android:layout_width="200dp"
         android:layout_height="wrap_content"
         android:layout_alignParentStart="true"
         android:layout_alignParentEnd="true"
         android:layout_alignParentBottom="true"
-        android:layout_marginStart="46dp"
-        android:layout_marginEnd="10dp"
-        android:layout_marginBottom="262dp"
-        android:inputType="textEmailAddress"
-        android:hint="이메일 주소를 입력해주세요!" />
+        android:layout_centerHorizontal="true"
+        android:layout_marginStart="44dp"
+        android:layout_marginEnd="82dp"
+        android:layout_marginBottom="246dp"
+        android:hint="이메일 주소를 입력해주세요!"
+        android:inputType="textEmailAddress" />
 
     <EditText
 
         android:id="@+id/pressVerificationcode"
-        android:layout_width="310dp"
+        android:layout_width="200dp"
         android:layout_height="wrap_content"
         android:layout_alignParentStart="true"
         android:layout_alignParentEnd="true"
         android:layout_alignParentBottom="true"
-        android:layout_marginStart="46dp"
-        android:layout_marginEnd="13dp"
-        android:layout_marginBottom="146dp"
-        android:inputType="number"
-        android:hint="인증번호를 입력해주세요!" />
+        android:layout_centerHorizontal="true"
+        android:layout_marginStart="44dp"
+        android:layout_marginEnd="85dp"
+        android:layout_marginBottom="195dp"
+        android:hint="인증번호를 입력해주세요!"
+        android:inputType="number" />
 
     <Button
-        android:id="@+id/sendConfirmNumber"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:id="@+id/signUp2Send"
+        android:layout_width="60dp"
+        android:layout_height="35dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
         android:layout_alignParentBottom="true"
-        android:layout_centerHorizontal="true"
-        android:layout_marginBottom="209dp"
-        android:text="인증번호 전송" />
+        android:layout_marginStart="327dp"
+        android:layout_marginEnd="23dp"
+        android:layout_marginBottom="246dp"
+        android:background="@drawable/button_round"
+        android:text="발송"
+        android:textSize="12sp" />
+
+    <Button
+        android:id="@+id/signUp2Confirm"
+        android:layout_width="60dp"
+        android:layout_height="35dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="329dp"
+        android:layout_marginEnd="23dp"
+        android:layout_marginBottom="195dp"
+        android:background="@drawable/button_round"
+        android:text="확인"
+        android:textSize="12sp" />
 
 </RelativeLayout>
