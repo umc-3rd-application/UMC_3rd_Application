@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".signUpActivity3">
+
+
+    <ImageButton
+        android:id="@+id/imageButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="25dp"
+        android:layout_marginTop="39dp"
+        android:background="@android:color/transparent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/ic_baseline_arrow_back_ios_new_24" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="29dp"
+        android:layout_marginTop="41dp"
+        android:fontFamily="sans-serif"
+        android:letterSpacing="0.02"
+        android:textColor="#525252"
+        android:textSize="15sp"
+        android:textStyle="normal"
+        app:layout_constraintStart_toEndOf="@+id/imageButton"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:text="프로필 작성" />
+
+    <TextView
+        android:id="@+id/textView4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="70dp"
+        android:layout_marginTop="99dp"
+        android:letterSpacing="-0.02"
+        android:text="연애 가치관 작성"
+        android:textColor="#0a0a0a"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/textView5"
+
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="2dp"
+        android:layout_marginTop="20dp"
+        android:letterSpacing="0.02"
+        android:textColor="#818181"
+        app:layout_constraintStart_toStartOf="@+id/textView4"
+        app:layout_constraintTop_toBottomOf="@+id/textView4"
+        tools:text="이런 내용을 적으면 좋아요!" />
+
+    <Button
+        android:id="@+id/writeProfileComplete"
+        android:layout_width="330dp"
+        android:layout_height="50dp"
+        android:layout_marginBottom="55dp"
+        android:background="@drawable/button_id"
+        android:gravity="center_horizontal"
+        android:letterSpacing="0.02"
+        android:textColor="#ffffff"
+        android:textSize="20sp"
+        android:textStyle="normal"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:text="프로필 작성 완료" />
+
+    <TextView
+
+        android:id="@+id/textView6"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="68dp"
+        android:layout_marginTop="8dp"
+        android:letterSpacing="0.02"
+        android:textColor="#818181"
+        android:textSize="11sp"
+        android:textStyle="normal"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView5"
+        tools:text="키워드만으로 담을 수 없는 자신의 성격\n
+자신의 연애 가치관과 그 이유\n
+상대에게 바라는 것과 내가 해줄 수 있는 것\n
+상대와 함께 즐기고 싶은 취미 생활\n
+상대와 함께하고 싶은 것\n
+집에서 데이트를 하고 싶다면?\n
+내향인인 나만의 매력 포인트 등" />
+
+    <EditText
+        android:gravity="top"
+        android:background="@drawable/memo_broder"
+        android:hint="여러분들의 연애 가치관을\n 최대한 자세히 적어 주세요!"
+        android:id="@+id/writeYourThought"
+        android:layout_width="350dp"
+        android:layout_height="310dp"
+        android:layout_marginTop="300dp"
+        android:layout_marginBottom="10dp"
+        app:layout_constraintEnd_toEndOf="@+id/textView4"
+        app:layout_constraintHorizontal_bias="0.503"
+        app:layout_constraintStart_toEndOf="@+id/textView4"
+        app:layout_constraintTop_toTopOf="parent" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
