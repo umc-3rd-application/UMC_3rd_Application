@@ -16,6 +16,7 @@ import android.widget.TextView
 import android.widget.Toast
 import androidx.core.os.HandlerCompat.postDelayed
 import androidx.core.widget.addTextChangedListener
+import com.kakao.sdk.common.util.Utility
 
 class loginactivity : AppCompatActivity() {
 
@@ -24,6 +25,7 @@ class loginactivity : AppCompatActivity() {
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
+
 
 
         //로그인 부분을 구현하기 위한 엑티비티입니다.
@@ -126,9 +128,10 @@ class loginactivity : AppCompatActivity() {
         //9.뒤로 가기 버튼을 2번 눌렀을시 앱을 종료합니다.
         //또한, 로그인화면 좌측상단의 버튼을 눌렀을 때도 종료시킨다.
 
-        val loginactivityBackButton = findViewById<ImageButton>(R.id.loginBackButton)
+        val loginactivityBackButton = findViewById<ImageButton>(R.id.loginActivityBackButton)
         loginactivityBackButton.setOnClickListener{
-            finish()
+            val intent = Intent(this, MainActivity::class.java)
+            startActivity(intent)
         }
 
     }
