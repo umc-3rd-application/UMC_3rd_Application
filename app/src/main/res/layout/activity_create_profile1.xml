@@ -214,4 +214,22 @@
         android:text="직업"
         app:layout_constraintStart_toStartOf="@+id/txt_address"
         tools:layout_editor_absoluteY="518dp" />
+
+    <Spinner
+        android:id="@+id/spn_address"
+        android:layout_width="409dp"
+        android:layout_height="wrap_content"
+        android:autofillHints="지역 선택"
+        app:layout_constraintEnd_toEndOf="@+id/linearLayout_height"
+        app:layout_constraintStart_toStartOf="@+id/txt_address"
+        tools:layout_editor_absoluteY="486dp" />
+
+    <Spinner
+        android:id="@+id/spn_job"
+        android:layout_width="410dp"
+        android:layout_height="wrap_content"
+        app:layout_constraintEnd_toEndOf="@+id/spn_address"
+        app:layout_constraintStart_toStartOf="@+id/spn_address"
+        app:layout_constraintTop_toBottomOf="@+id/txt_job"
+        android:autofillHints="직업 선택"/>
 </androidx.constraintlayout.widget.ConstraintLayout>
