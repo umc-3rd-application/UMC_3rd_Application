@@ -5,7 +5,7 @@ import android.os.Bundle
 import androidx.appcompat.app.AppCompatActivity
 import com.example.umc_3rd_application.databinding.ActivityCreateProfile2Binding
 
-class CreateProfile2Activity:AppCompatActivity() {
+class CreateProfile2: AppCompatActivity() {
     private lateinit var viewBinding : ActivityCreateProfile2Binding
 
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -21,7 +21,7 @@ class CreateProfile2Activity:AppCompatActivity() {
             add(Profile2Data("7","8","9"))
             add(Profile2Data("10","11","12"))
         }
-        val profile2RVAdapter = Profile2RVAdapter(dataList)
+        val profile2RVAdapter = ProfileRVAdapter(dataList)
         // 이 다음 뭐써야되냐 .. layoutmanager 호출 해야되는데
 
 
