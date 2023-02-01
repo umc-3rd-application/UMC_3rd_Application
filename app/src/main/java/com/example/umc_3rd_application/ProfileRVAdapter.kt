@@ -6,8 +6,8 @@ import android.view.ViewGroup
 import androidx.recyclerview.widget.RecyclerView
 import com.example.umc_3rd_application.databinding.Profile2ItemBinding
 
-class Profile2RVAdapter(private val dataList : ArrayList<Profile2Data>) :
-    RecyclerView.Adapter<Profile2RVAdapter.Profile2DataViewHolder>()
+class ProfileRVAdapter(private val dataList : ArrayList<Profile2Data>) :
+    RecyclerView.Adapter<ProfileRVAdapter.Profile2DataViewHolder>()
 {
     inner class Profile2DataViewHolder(private val viewBinding : Profile2ItemBinding)
         : RecyclerView.ViewHolder(viewBinding.root)
