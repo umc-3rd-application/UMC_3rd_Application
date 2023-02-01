@@ -216,20 +216,33 @@
         tools:layout_editor_absoluteY="518dp" />
 
     <Spinner
-        android:id="@+id/spn_address"
-        android:layout_width="409dp"
-        android:layout_height="wrap_content"
+        android:id="@+id/spinner_address1"
+        android:layout_width="198dp"
+        android:layout_height="21dp"
+        android:layout_marginStart="4dp"
         android:autofillHints="지역 선택"
-        app:layout_constraintEnd_toEndOf="@+id/linearLayout_height"
+        app:layout_constraintEnd_toEndOf="@+id/linearLayout_age"
+        app:layout_constraintHorizontal_bias="0.25"
         app:layout_constraintStart_toStartOf="@+id/txt_address"
-        tools:layout_editor_absoluteY="486dp" />
+        tools:layout_editor_absoluteY="485dp" />
 
     <Spinner
-        android:id="@+id/spn_job"
-        android:layout_width="410dp"
-        android:layout_height="wrap_content"
-        app:layout_constraintEnd_toEndOf="@+id/spn_address"
-        app:layout_constraintStart_toStartOf="@+id/spn_address"
-        app:layout_constraintTop_toBottomOf="@+id/txt_job"
-        android:autofillHints="직업 선택"/>
+        android:id="@+id/spinner_job"
+        android:layout_width="385dp"
+        android:layout_height="27dp"
+        android:layout_marginTop="8dp"
+        android:autofillHints="직업 선택"
+        app:layout_constraintEnd_toEndOf="@+id/spinner_address1"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/spinner_address1"
+        app:layout_constraintTop_toBottomOf="@+id/txt_job" />
+
+    <Spinner
+        android:id="@+id/spinner_address2"
+        android:layout_width="168dp"
+        android:layout_height="23dp"
+        app:layout_constraintBottom_toBottomOf="@+id/spinner_address1"
+        app:layout_constraintEnd_toEndOf="@+id/linearLayout_height"
+        app:layout_constraintStart_toStartOf="@+id/linearLayout_height"
+        app:layout_constraintTop_toTopOf="@+id/spinner_address1" />
 </androidx.constraintlayout.widget.ConstraintLayout>
