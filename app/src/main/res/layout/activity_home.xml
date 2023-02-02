@@ -1,0 +1,142 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".HomeActivity">
+
+    <TextView
+        android:id="@+id/textView12"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="61dp"
+        android:layout_marginTop="118dp"
+        android:text="레터아울이 전하는\n오늘의 새로운 인연이에요."
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/Todays"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="56dp"
+        android:layout_marginBottom="468dp"
+        android:text="오늘의 소개"
+        android:textColor="#000000"
+        android:textSize="30sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/showDetail"
+        app:layout_constraintStart_toStartOf="@+id/textView12"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/liveInNearby"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="55dp"
+        android:layout_marginEnd="30dp"
+        android:layout_marginBottom="98dp"
+        android:text="근처에 사는"
+        app:layout_constraintBottom_toTopOf="@+id/mainimage"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageButton
+        android:id="@+id/mainimage"
+        android:layout_width="250dp"
+        android:layout_height="0dp"
+        android:layout_marginBottom="280dp"
+        android:background="@android:color/transparent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/liveInNearby"
+        app:srcCompat="@drawable/circle" />
+
+    <ImageButton
+        android:id="@+id/imageside1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="60dp"
+        android:layout_marginEnd="328dp"
+        android:background="@android:color/transparent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/mainimage"
+        app:srcCompat="@drawable/circleside" />
+
+    <ImageButton
+        android:id="@+id/imageside2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="60dp"
+        android:background="@android:color/transparent"
+        app:layout_constraintStart_toEndOf="@+id/mainimage"
+        app:layout_constraintTop_toTopOf="@+id/mainimage"
+        app:srcCompat="@drawable/circleside" />
+
+    <ImageButton
+        android:id="@+id/goToLeftImage"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="36dp"
+        android:layout_marginTop="52dp"
+        android:background="@android:color/transparent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/imageside1"
+        app:srcCompat="@drawable/baseline_arrow_back_ios_24" />
+
+    <ImageButton
+        android:id="@+id/goToRightImage"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="52dp"
+        android:background="@android:color/transparent"
+        app:layout_constraintStart_toStartOf="@+id/imageside2"
+        app:layout_constraintTop_toTopOf="@+id/imageside2"
+        app:srcCompat="@drawable/baseline_arrow_forward_ios_24" />
+
+    <TextView
+
+        android:textStyle="bold"
+        android:textSize="38sp"
+        android:textColor="#4d3ac8"
+        android:letterSpacing="0.02"
+        android:gravity="center_horizontal"
+        android:id="@+id/nickName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="25dp"
+        android:text="닉네임"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/mainimage" />
+
+    <TextView
+        android:textSize="20dp"
+        android:id="@+id/detailProfile"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="00세 / 000cm / 서울"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/nickName" />
+
+    <Button
+        android:id="@+id/showDetail"
+        android:layout_width="112dp"
+        android:layout_height="60dp"
+        android:layout_marginBottom="120dp"
+        android:text="세부보기"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/Todays" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
+
+
+
+
